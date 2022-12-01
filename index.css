@@ -1,0 +1,126 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.password-container {
+  background-color: pink;
+  width: 500px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.input-container {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: solid 2px black;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input {
+  cursor: default;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  letter-spacing: 4px;
+}
+
+.input::placeholder {
+  letter-spacing: 0px;
+}
+
+.fa-copy {
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.fa-copy:hover {
+  opacity: 0.7;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.btn:hover {
+  color: black;
+  background-color: white;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.alert-container {
+  position: fixed;
+  width: 300px;
+  height: 50px;
+  background-color: lightgreen;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: default;
+  transition: 0.4s;
+}
+
+.active.alert-container {
+  right: -400px;
+}
